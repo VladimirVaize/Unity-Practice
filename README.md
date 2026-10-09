@@ -4,7 +4,10 @@
 
 <table>
   <tr>
-    <td colspan="4" align="center"><h2><strong>Этап 1. Основы C#: переменные, условия и вычисления</strong></h2></td>
+    <td colspan="4" align="center">
+      <h2><strong>Этап 1. Основы C#: переменные, условия и вычисления</strong></h2>
+      <h6 align="right"><em>Задачи 1-8<br>Начальный уровень</em></h6>
+    </td>
   </tr>
   <tr>
     <td colspan="4" align="center">
@@ -243,7 +246,10 @@
   </tr>
 
   <tr>
-    <td colspan="4" align="center"><h2><strong>Этап 2. Unity: объекты, компоненты и управление</strong></h2></td>
+    <td colspan="4" align="center">
+      <h2><strong>Этап 2. Unity: объекты, компоненты и управление</strong></h2>
+      <h6 align="right"><em>Задачи 9-16<br>Начальный уровень</em></h6>
+    </td>
   </tr>
   <tr>
     <td colspan="4" align="center">
