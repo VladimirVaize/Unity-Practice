@@ -39,7 +39,7 @@
     <td colspan="4">
       <details>
         <summary>Решение</summary>
-        <br>
+        <hr>
         <pre lang="csharp">
           void Start()
           {
