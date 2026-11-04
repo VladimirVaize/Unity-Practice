@@ -75,6 +75,26 @@
   </tr>
   <tr>
     <td colspan="4">
+      <details>
+        <summary>Решение</summary>
+        <hr>
+        <pre lang="csharp">
+          [SerializeField] private string _name = "New Object";
+          [SerializeField] private int _cost = 0;
+          [SerializeField] private float _weight = 0;
+          [SerializeField] private bool _isPickup = false;
+          [SerializeField] private int _amount = 0;
+          <br>
+          public void ShowInfo()
+          {
+            Debug.Log($"Name - {_name}, " +
+                      $"Cost - {_cost}, " +
+                      $"Weight - {_weight}, " +
+                      $"IsPickup - {_isPickup}, " +
+                      $"Amount - {_amount}");
+          }
+        </pre>
+      </details>
       <hr>
     </td>
   </tr>
