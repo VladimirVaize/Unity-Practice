@@ -37,6 +37,16 @@
   </tr>
   <tr>
     <td colspan="4">
+      <details>
+        <summary>Решение</summary>
+        <br>
+        <pre lang="csharp">
+          void Start()
+          {
+            Debug.Log("Game started! \nWelcome to 'Game Name'");
+          }
+        </pre>
+      </details>
       <hr>
     </td>
   </tr>
