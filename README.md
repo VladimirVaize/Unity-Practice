@@ -85,7 +85,7 @@
           [SerializeField] private bool _isPickup = false;
           [SerializeField] private int _amount = 0;
           <br>
-          public void ShowInfo()
+          public void ShowInfo() // Можно отображать через Start() или UI Button
           {
             Debug.Log($"Name - {_name}, " +
                       $"Cost - {_cost}, " +
