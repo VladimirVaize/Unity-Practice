@@ -85,7 +85,7 @@
           [SerializeField] private bool _isPickup = false;
           [SerializeField] private int _amount = 0;
           <br>
-          public void ShowInfo() // Можно отображать через Start() или UI Button
+          private void OnValidate()
           {
             Debug.Log($"Name - {_name}, " +
                       $"Cost - {_cost}, " +
@@ -123,6 +123,37 @@
   </tr>
   <tr>
     <td colspan="4">
+      <details>
+        <summary>Решение</summary>
+        <hr>
+        <pre lang="csharp">
+          [SerializeField] private string _name;
+          [SerializeField] private int _level;
+          [SerializeField] private float _health;
+          [SerializeField] private float _maxHealth;
+          [SerializeField] private float _speed;
+          <br>
+          private void Awake()
+          {
+            _name = "PlayerName";
+            _level = 0;
+            _maxHealth = 100;
+            _health = _maxHealth;
+            _speed = 5;
+          }
+          <br>
+          private void OnValidate()
+          {
+            _maxHealth = Mathf.Max(0f, _maxHealth);
+            _health = Mathf.Clamp(_health, 0f, _maxHealth);
+          }
+          <br>
+          public void ChangeHealth(float ChangeableValue)
+          {
+            _health = Mathf.Max(0, Mathf.Min(_health + ChangeableValue, _maxHealth));
+          }
+        </pre>
+      </details>
       <hr>
     </td>
   </tr>
